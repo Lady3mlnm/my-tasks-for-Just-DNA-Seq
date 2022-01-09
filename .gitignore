@@ -18,6 +18,3 @@ tags
 dist/*
 .idea
 .idea/*
-
-# temp files
-notebooks/.ipynb_checkpoints
