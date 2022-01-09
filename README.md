@@ -6,11 +6,11 @@ The repository contains:
 * notebooks to preprocess the data. In the data:
   **longevity_genes_original.csv** - original data from [https://genomics.senescence.info](https://genomics.senescence.info/longevity/)
 
-  **longevity_genes_splitted_rs.csv** - filtered and splitted data with only rs, one rs per record
-
-  **longevity_genes_splitted_not_rs.csv** - filtered data without rs, there can be several variants per record or NaN
-
-  **longevity_genes_splitted_all.csv** - all processed data in one file (just in case). It contains cases then rs and not-rs variants are located next to each other* annotator code
+  **longevity_genes_splitted_rs.csv** - filtered and splitted data with only rs in the column 'Variant(s)'. One rs per record.
+  
+  **longevity_genes_splitted_not_rs.csv** - filtered data without rs in the column 'Variant(s)'. Here cells of the column 'Variant(s)' can contain several variants or value NaN.
+  
+  **longevity_genes_splitted_all.csv** - all processed data in one file (just in case).<br>That is combination of content of files **longevity genes_splitted_rs.csv** and **longevity_genes_splitted_not_rs.csv**.
 * annotators/longevitymap
 * environment.yaml file for conda environment
 

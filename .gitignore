@@ -18,3 +18,7 @@ tags
 dist/*
 .idea
 .idea/*
+
+# temp files
+notebooks/.ipynb_checkpoints
+annotators/longevitymap/.ipynb_checkpoints
