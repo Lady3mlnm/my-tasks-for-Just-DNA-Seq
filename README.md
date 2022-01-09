@@ -10,9 +10,9 @@ The repository contains:
   
   **longevity_genes_splitted_not_rs.csv** - filtered data without rs in the column 'Variant(s)'. Here cells of the column 'Variant(s)' can contain several variants or value NaN.
   
-  **longevity_genes_splitted_all.csv** - all processed data in one file (just in case).<br>That is combination of content of files **longevity genes_splitted_rs.csv** and **longevity_genes_splitted_not_rs.csv**.
-* annotators/longevitymap
-* environment.yaml file for conda environment
+  **longevity_genes_splitted_all.csv** - all processed data in one file (just in case). That is combination of content of files **longevity genes_splitted_rs.csv** and **longevity_genes_splitted_not_rs.csv**.
+* annotators/longevitymap - annotator code
+* environment.yaml - file for conda environment
 
 ## setting up
 
