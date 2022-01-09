@@ -24,17 +24,17 @@ class CravatAnnotator(BaseAnnotator):
 
         self.dbsnp_base = sqlite3.connect('sqlite:///dbsnp.db') #where?
 
-        assert os.path.isfile( self.csv_fn)
+        assert os.path.isfile(self.csv_fn)
         assert isinstance(self.dbsnp_base, sqlite3.Connection)
         assert isinstance(self.dbconn, sqlite3.Connection)
         assert isinstance(self.cursor, sqlite3.Cursor)
 
-        df = pandas.read_csv( self.csv_fn, header=0, names=self.col_names) # Read a comma-separated values (csv) file into DataFrame
-        df.to_sql( self.table_name, self.dbconn, if_exists='replace', index=True, index_label= self.index_label ) #Write records stored in a DataFrame to a SQL database.
+        df = pandas.read_csv(self.csv_fn, header=0, names=self.col_names) # Read a comma-separated values (csv) file into DataFrame
+        df.to_sql( self.table_name, self.dbconn, if_exists='replace', index=True, index_label=self.index_label ) #Write records stored in a DataFrame to a SQL database.
 
         # same by hand:
-        #con = self.dbconn #pointer to instance of connection
-        #cur = self.cursor #cursor pointer
+        # con = self.dbconn #pointer to instance of connection
+        # cur = self.cursor #cursor pointer
         # cur.execute("CREATE TABLE t (id,Association,Population,Variants,Genes,PubMed);") # use your column names here
         # with open('data.csv','r') as fin: # `with` statement available in 2.5+
         #    # csv.DictReader uses first line in file for column headings by default

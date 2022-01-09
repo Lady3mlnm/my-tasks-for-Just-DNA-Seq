@@ -19,6 +19,5 @@ dist/*
 .idea
 .idea/*
 
-# Mal's specific
-1_Longevity_genes_splitting/notebooks/.ipynb_checkpoints
-1_Longevity_genes_splitting/release.html
+# temp files
+notebooks/.ipynb_checkpoints
